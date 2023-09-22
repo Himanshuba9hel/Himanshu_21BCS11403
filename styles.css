@@ -1,20 +1,24 @@
 body{
     padding: 0;
     margin: 0;
+    background-color: #D8E3E7;
 }
 #all {
    
-    background-color: aqua;
+    background-color: #D8E3E7;
     
 }
 
 div {
     margin: 3px;
-    padding: 3px;
+    padding: 7px;
+    border-radius: 7px;
+    margin: 7px;
+    margin-bottom: 14px;
     border-style: solid;
-    border-width: 3px;
-    border-color: gray;
-    background-color: azure;
+    border-width: 0.5px;
+    border-color: rgb(123, 255, 99);
+    background-color: #51C4D4;
     
 }
 #head_list {
@@ -22,12 +26,29 @@ div {
 }
 .head_list {
     display: flex;
-    padding: 0px;
+    position: sticky;
+    flex-direction: row;
+    align-content: center;
+    
+    border-radius: 20px;
+    margin: 3px;
+    padding: 3px;
     justify-content: space-between;
 }
 .head_list > div {
-    
-    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+
+    margin: 0;
+    padding: 7px;
+    height: auto;
+    width: 90px;
+    border-radius: 20px;
+    background-color: #D8E3E7;
+}
+.head_list > div > p {
+    margin: 0;
+    padding: 0;
 }
 
 .main_menu {
@@ -40,7 +61,10 @@ div {
 .left_list {
     width: 100%;
     min-width: 0px;
-    max-width: 100px;
+    max-width: 300px;
+}
+.left_list > div{
+    background-color: #D8E3E7;
 }
 
 #player {
@@ -51,12 +75,10 @@ div {
     max-width: 340px;
     max-height: 340px;
 }
-.player {
-    
-}
+
 #music_player_icon {
     display: block;
-    height: 170px;
+    height: 130px;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
@@ -68,11 +90,23 @@ div {
    height: 30px;
    padding: 0px ;
 }
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.controls > div > button {
+    width: 60px;
+}
 .music_list {
     overflow: scroll;
     width: 100%;
     min-width: 100px;
-    max-width: 250px;
+    max-width: 450px;
+}
+.music_list > div > button {
+    border: 0;
+    background-color: aliceblue;
 }
 
 .bottom_list {
