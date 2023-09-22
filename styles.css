@@ -1,8 +1,7 @@
-.all {
-    display: flex;
-    flex-direction: column;
-    align-content: stretch;
+#all {
+    
     background-color: aqua;
+    margin-bottom: 0%;
 }
 
 div {
@@ -14,24 +13,34 @@ div {
     background-color: azure;
     
 }
+
 .head_list {
     display: flex;
+    padding: 0px;
     justify-content: space-around;
+    height: 30px;
 }
 .head_list > div {
-   
+    
     background-color: whitesmoke;
 }
 
 .main_menu {
     display: flex;
     justify-content: space-between;
+    align-content: stretch;
+    height: 400px;
     
 }
 
 #player {
     width: 300px;
     height: 300px;
+    min-width: 300px;
+}
+.music_list {
+    overflow: scroll;
+    width: 100%;
 }
 
 .bottom_list {
