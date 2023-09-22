@@ -28,7 +28,7 @@
                     <div><p id="test">Player!!</p></div>
                     <div id="music_player_icon" class="music_player_icon"></div>
                     <div>
-                        <audio class= "music_player" controls src="/music_list/Maan Meri Jaan.m4a">
+                        <audio class= "music_player" id = "music_player" controls src="/music_list/Maan Meri Jaan.m4a">
                             <div>
                             Sorry, your browser does not support the <audio> tag used in this demo.
                             </div>
@@ -37,22 +37,29 @@
                     <!-- <embed src="/music_list/Leja Leja.m4a" loop="false" autostart="false" width="2" height="4"> -->
                 </div>
             </div>
-            <div class="music_list" id="music_list">
-                <div><p>Music_1</p></div>
-                <div><p>Music_2</p></div>
-                <div><p>Music_3</p></div>
-                <div><p>Music_4</p></div>
-                <div><p>Music_5</p></div>
-                <div><p>Music_6</p></div>
-                <div><p>Music_7</p></div>
-                <div><p>Music_8</p></div>
+            
+            <div class="music_list" id="music_list"> 
+                <div><button onclick="change_song('Daku.mp3')">Daku</button></div>
+                <div><button onclick="change_song('Destiny.mp3')">Destiny</button></div>
+                <div><button onclick="change_song('Maan Meri Jaan.m4a')">Maan Meri Jaan</button></div>
+                <div><button onclick="change_song('Milo Na Tum.mp3')">Milo Na Tum</button></div>
+                <div><button onclick="change_song('Naah.mp3')">Naah</button></div>
+                <div><button onclick="change_song('On Top.mp3')">On Top</button></div>
+                <div><button onclick="change_song('Pasoori.mp3')">Pasoori</button></div>
+                <div><button onclick="change_song('Vikram - Title Track.mp3')">Vikram - Title Track</button></div>
+                <div><button onclick="change_song('Zara Thehro.mp3')">Zara Thehro</button></div>
+                
             </div>
+            
         </div>
         <div class ="bottom_list">
             <div>Bottom_1</div>
             <div>Bottom_2</div>
             <div>Bottom_3</div>
+            
         </div>
+        
+        
     </div>
     
 </body>

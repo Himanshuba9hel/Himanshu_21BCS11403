@@ -51,9 +51,7 @@ div {
     max-width: 340px;
     max-height: 340px;
 }
-.player {
-    
-}
+
 #music_player_icon {
     display: block;
     height: 170px;
@@ -73,6 +71,10 @@ div {
     width: 100%;
     min-width: 100px;
     max-width: 250px;
+}
+.music_list > div > button {
+    border: 0;
+    background-color: aliceblue;
 }
 
 .bottom_list {
