@@ -10,7 +10,6 @@ body{
 #heading {
     padding: 0;
     margin: 0;
-<<<<<<< HEAD
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     text-align: center;
@@ -19,13 +18,6 @@ body{
 #all {
     
     background-color: transparent;
-=======
-    background-color: #D8E3E7;
-}
-#all {
-   
-    background-color: #D8E3E7;
->>>>>>> 96f61b53f191355d8b402aac390fe8558cbe0a13
     
 }
 
@@ -35,17 +27,10 @@ div > div {
     border-radius: 7px;
     margin: 7px;
     margin-bottom: 14px;
-<<<<<<< HEAD
     /* border-style: solid;
     border-width: 4px;
     border-color: #9d44C0; */
     background-color: transparent;
-=======
-    border-style: solid;
-    border-width: 0.5px;
-    border-color: rgb(123, 255, 99);
-    background-color: #51C4D4;
->>>>>>> 96f61b53f191355d8b402aac390fe8558cbe0a13
     
 }
 #head_list {
@@ -71,14 +56,10 @@ div > div {
     height: auto;
     width: 90px;
     border-radius: 20px;
-<<<<<<< HEAD
 }
 .head_list > div:hover{
     background-image: url("img_list/button image.png");
     background-size: cover;
-=======
-    background-color: #D8E3E7;
->>>>>>> 96f61b53f191355d8b402aac390fe8558cbe0a13
 }
 .head_list > div > p {
     margin: 0;
@@ -98,11 +79,7 @@ div > div {
     max-width: 300px;
 }
 .left_list > div{
-<<<<<<< HEAD
     /* background-color: #D8E3E7; */
-=======
-    background-color: #D8E3E7;
->>>>>>> 96f61b53f191355d8b402aac390fe8558cbe0a13
 }
 
 #player {
@@ -155,13 +132,9 @@ div > div {
 }
 .music_list > div > button {
     border: 0;
-<<<<<<< HEAD
     background-color: transparent;
     color: aliceblue;
     /* background-color: aliceblue; */
-=======
-    background-color: aliceblue;
->>>>>>> 96f61b53f191355d8b402aac390fe8558cbe0a13
 }
 
 .bottom_list {
