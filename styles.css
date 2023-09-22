@@ -116,6 +116,14 @@ div > div {
 .controls > div > button {
     width: 60px;
 }
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.controls > div > button {
+    width: 60px;
+}
 .music_list {
     overflow: scroll;
     width: 100%;
