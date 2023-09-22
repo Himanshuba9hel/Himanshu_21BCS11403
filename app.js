@@ -3,14 +3,15 @@ function change_song(name){
     document.getElementById("music_player").src = name;
 }
 
-var a = document.getElementById("music_player");
-function playaudio() {
-    a.play();
-}
-function pauseaudio() {
-    a.pause();
-}
-function stopaudio() {
-    a.pause();
-    a.currentTime = 0;
-}
+let directory_name = "music_list";
+
+// Function to get current filenames
+// in directory
+let filenames = fs.readdirSync(directory_name);
+
+console.log("\nFilenames in directory:");
+console.log(filenames);
+
+filenames.forEach((file) => {
+	console.log("File:", file);
+});
