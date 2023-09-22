@@ -1,12 +1,28 @@
 div {
-    margin: 5px;
-    padding: 5px;
-    border-width: 7px;
-    border-color: black;
+    margin: 3px;
+    padding: 3px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: gray;
     background-color: azure;
    
 }
 .head_list {
     display: flex;
     justify-content: space-around;
+}
+.head_list > div {
+   
+    background-color: whitesmoke;
+}
+
+.main_menu {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#player {
+    width: 300px;
+    height: 300px;
 }
