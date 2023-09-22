@@ -1,0 +1,12 @@
+div {
+    margin: 5px;
+    padding: 5px;
+    border-width: 7px;
+    border-color: black;
+    background-color: azure;
+   
+}
+.head_list {
+    display: flex;
+    justify-content: space-around;
+}
