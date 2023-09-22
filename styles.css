@@ -26,13 +26,29 @@ div {
 }
 .head_list {
     display: flex;
+    position: sticky;
+    flex-direction: row;
+    align-content: center;
     
-    padding: 0px;
+    border-radius: 20px;
+    margin: 3px;
+    padding: 3px;
     justify-content: space-between;
 }
 .head_list > div {
-    
+    display: flex;
+    justify-content: center;
+
+    margin: 0;
+    padding: 7px;
+    height: auto;
+    width: 90px;
+    border-radius: 20px;
     background-color: #D8E3E7;
+}
+.head_list > div > p {
+    margin: 0;
+    padding: 0;
 }
 
 .main_menu {
@@ -45,7 +61,7 @@ div {
 .left_list {
     width: 100%;
     min-width: 0px;
-    max-width: 100px;
+    max-width: 300px;
 }
 .left_list > div{
     background-color: #D8E3E7;
@@ -74,11 +90,19 @@ div {
    height: 30px;
    padding: 0px ;
 }
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.controls > div > button {
+    width: 60px;
+}
 .music_list {
     overflow: scroll;
     width: 100%;
     min-width: 100px;
-    max-width: 250px;
+    max-width: 450px;
 }
 .music_list > div > button {
     border: 0;
