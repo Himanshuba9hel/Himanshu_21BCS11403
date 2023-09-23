@@ -45,8 +45,7 @@ div > div {
     margin: 3px;
     padding: 3px;
     justify-content: space-between;
-    border-style: solid;
-    border-color: aqua;
+    
 }
 .head_list > div {
     display: flex;
@@ -78,76 +77,36 @@ input[type=text] {
 
 .main_menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-content: stretch;
     height: 400px;
     
 }
-.left_list {
-    width: 100%;
-    min-width: 0px;
-    max-width: 300px;
-    padding-left: 5px;
-    margin: 0;
 
-    border-color: aqua;
-    border-width: 3px;
-    bo
-}
-#player {
-    min-width: 300px;
-    min-height: 300px;
-    width: 100%;
-    height: 100%;
-    max-width: 500px;
-    max-height: 500px;
+#music_image {
+    box-shadow: 5px 5px 10px black, 5px 5px 10px black;
 }
 
-#music_player_icon {
-    display: block;
-    height: 130px;
-    margin-left: auto;
-    margin-right: auto;
-    image-rendering: unset;
-    width: 60%;
-    background-image: url(img_list/Music_player_icon2.gif);
-}
-.music_player {
-   border: 1px solid rgb(180, 65, 65) ; 
-   width: 100%;
-   height: 20px;
-   padding: 0px ;
-   margin-bottom: 0;
-}
-.controls {
-    padding:  0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.controls > div > button {
-    width: 60px;
-}
-.controls {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.controls > div > button {
-    width: 60px;
-}
 .music_list {
-    overflow: scroll;
+    overflow: auto;
     width: 100%;
     min-width: 100px;
     max-width: 450px;
+    text-align: left;
+    margin: 20px;
+}
+.music_list > div {
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(163, 162, 162));
+    box-shadow: 3px 3px 5px black;
 }
 .music_list > div > button {
-    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    border-color: transparent;
+    border-color: white;
     background-color: transparent;
-    color: aliceblue;
-    /* background-color: aliceblue; */
+    border: 0;
 }
 
 .bottom_list {
@@ -160,4 +119,9 @@ input[type=text] {
     width: 100% ;
     height: 80px; 
     border-radius: 20px;
+    box-shadow: 7px 7px 6px rgb(72, 72, 72);
+}
+.search {
+    margin-top: 5px;
+    padding: 20px;
 }
