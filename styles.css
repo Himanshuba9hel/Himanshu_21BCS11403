@@ -61,10 +61,7 @@ div > div {
     background-image: url("img_list/button image.png");
     background-size: cover;
 } */
-.head_list > div > p {
-    margin: 0;
-    padding: 0;
-}
+
 input[type=text] {
     width: 200px;
     padding: 12px;
@@ -121,7 +118,7 @@ input[type=text] {
     border-radius: 20px;
     box-shadow: 7px 7px 6px rgb(72, 72, 72);
 }
-.search {
-    margin-top: 5px;
-    padding: 20px;
+#button {
+    margin: 8px;
+    padding: 10px;
 }
