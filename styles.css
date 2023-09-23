@@ -6,15 +6,13 @@ body{
     text-align: center;
     color: aliceblue;
     background-image: url('img_list/wallpaper.png');
-    min-height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
+  
 }
 #heading {
    padding-left:  60px;
     height: 70px;
+    padding-right: 40%;
     float: left;
 }
 #all {
@@ -43,11 +41,12 @@ div > div {
     position: sticky;
     flex-direction: row;
     align-content: center;
-    
     border-radius: 20px;
     margin: 3px;
     padding: 3px;
     justify-content: space-between;
+    border-style: solid;
+    border-color: aqua;
 }
 .head_list > div {
     display: flex;
@@ -56,83 +55,25 @@ div > div {
     margin: 0;
     padding: 7px;
     height: auto;
-    width: 90px;
+    width: auto;
     border-radius: 20px;
 }
-.head_list > div:hover{
+/* .head_list > div:hover{
     background-image: url("img_list/button image.png");
     background-size: cover;
-}
+} */
 .head_list > div > p {
     margin: 0;
     padding: 0;
 }
-
-.inp
-  position: relative
-  margin: auto
-  width: 100%
-  max-width: 280px
-  border-radius: 3px
-  overflow: hidden
-
-  .label
-    position: absolute
-    top: 20px
-    left: 12px
-    font-size: 16px
-    color: rgba($dark,.5)
-    font-weight: 500
-    transform-origin: 0 0
-    transform: translate3d(0,0,0)
-    transition: all .2s ease
-    pointer-events: none
-
-  .focus-bg
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    background: rgba($dark,.05)
-    z-index: -1
-    transform: scaleX(0)
-    transform-origin: left
-
-  input
-    -webkit-appearance: none
-    appearance: none
-    width: 100%
-    border: 0
-    font-family: inherit
-    padding: 16px 12px 0 12px
-    height: 56px
-    font-size: 16px
-    font-weight: 400
-    background: rgba($dark,.02)
-    box-shadow: inset 0 -1px 0 rgba($dark,.3)
-    color: $dark
-    transition: all .15s ease
-
-    &:hover
-      background: rgba($dark,.04)
-      box-shadow: inset 0 -1px 0 rgba($dark,.5)
-    
-    &:not(:placeholder-shown)
-      + .label
-        color: rgba($dark,.5)
-        transform: translate3d(0,-12px,0) scale(.75)
-    
-    &:focus
-      background: rgba($dark,.05)
-      outline: none
-      box-shadow: inset 0 -2px 0 $primary
-      + .label
-        color: $primary
-        transform: translate3d(0,-12px,0) scale(.75)
-        + .focus-bg
-          transform: scaleX(1)
-          transition: all .1s ease
+input[type=text] {
+    width: 200px;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(191, 175, 206);
+}
 
 
 .main_menu {
@@ -146,18 +87,20 @@ div > div {
     width: 100%;
     min-width: 0px;
     max-width: 300px;
-}
-.left_list > div{
-    /* background-color: #D8E3E7; */
-}
+    padding-left: 5px;
+    margin: 0;
 
+    border-color: aqua;
+    border-width: 3px;
+    bo
+}
 #player {
     min-width: 300px;
     min-height: 300px;
     width: 100%;
     height: 100%;
-    max-width: 340px;
-    max-height: 340px;
+    max-width: 500px;
+    max-height: 500px;
 }
 
 #music_player_icon {
@@ -165,6 +108,7 @@ div > div {
     height: 130px;
     margin-left: auto;
     margin-right: auto;
+    image-rendering: unset;
     width: 60%;
     background-image: url(img_list/Music_player_icon2.gif);
 }
@@ -209,4 +153,11 @@ div > div {
 .bottom_list {
     display: flex;
     justify-content: space-between;
+}
+
+#music_player {
+    opacity: 70%;
+    width: 100% ;
+    height: 80px; 
+    border-radius: 20px;
 }

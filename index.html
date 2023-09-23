@@ -12,13 +12,17 @@
     <div class="all" id = "all">
         <div>
             <div class = "head_list">
-                
-                <div><p>Search</p></div>
-                <label for="inp" class="inp">
-                    <input type="text" id="inp" placeholder="&nbsp;">
-                    <span class="label">Label</span>
-                    <span class="focus-bg"></span>
-                </label>
+                <div class = "search_group" id = "search_group">
+                    
+                    <div>
+                        <form>
+                            <label for="search_input"></label>
+                                <input type="text" id="search_input" nane="search_input">
+                        
+                        </form>
+                    </div>
+                    <div><button>Search</button></div>
+                </div>
             </div>
         </div>
         <div class="main_menu">
@@ -31,44 +35,29 @@
                 <div>
                     
                     <div id="music_player_icon" class="music_player_icon"></div>
-                    <div>
-                        <iframe src="https://drive.google.com/file/d/1Vsd-gmHiTs_t4rGjrJ0LEvNvU_AqXUlJ/preview" 
-                        width="auto" height="40px" ></iframe>
-                        <audio class= "music_player" id = "music_player" controls 
-                        src="https://drive.google.com/file/d/1Vsd-gmHiTs_t4rGjrJ0LEvNvU_AqXUlJ/view?usp=sharing" 
-                        type="audio/mpeg" loop>
-                            <div>
-                            Sorry, your browser does not support the <audio> tag used in this demo.
-                            </div>
-                        </audio>
-                    </div>
+                    
                     <!-- <embed src="/music_list/Leja Leja.m4a" loop="false" autostart="false" width="2" height="4"> -->
                 </div>
-                <div class="controls">
-                    <div><button onclick="pauseaudio()">Pause</button></div>
-                    <div><button onclick="playaudio()">Play</button></div>
-                    <div><button onclick="stopaudio()">Stop</button></div>
-                </div>
+                
             </div>
             
             <div class="music_list" id="music_list"> 
                 <div><button onclick="change_song('Daku.mp3')">Daku</button></div>
-                <div><button onclick="change_song('Destiny.mp3')">Destiny</button></div>
-                <div><button onclick="change_song('Maan Meri Jaan.m4a')">Maan Meri Jaan</button></div>
-                <div><button onclick="change_song('Milo Na Tum.mp3')">Milo Na Tum</button></div>
-                <div><button onclick="change_song('Naah.mp3')">Naah</button></div>
-                <div><button onclick="change_song('On Top.mp3')">On Top</button></div>
-                <div><button onclick="change_song('Pasoori.mp3')">Pasoori</button></div>
-                <div><button onclick="change_song('Vikram - Title Track.mp3')">Vikram - Title Track</button></div>
-                <div><button onclick="change_song('Zara Thehro.mp3' )">Zara Thehro</button></div>
+                <div><button onclick="change_song('https://drive.google.com/file/d/1U5Szhcudb2VRHafz2k8LfeiYLj3Yc2ut/preview')">Destiny</button></div>
+                <div><button onclick="change_song('https://drive.google.com/file/d/1AJDeHjFdcNzwN6-Rlgn3FXLWUaOeisFn/preview')">Maan Meri Jaan</button></div>
+                <div><button onclick="change_song('https://drive.google.com/file/d/1rB6G64ynmH1F8azDanhYurcheOiOjuNb/preview')">Milo Na Tum</button></div>
+                <div><button onclick="change_song('https://drive.google.com/file/d/1EI5U7rbLXxNf29oi_jCCLxSb_s9CbZ-4/preview')">Naah</button></div>
+                <div><button onclick="change_song('https://drive.google.com/file/d/17Tw0ywqiCPJw0SMHdgxAa7imOxRG_Xf-/preview')">On Top</button></div>
+                <div><button onclick="change_song('https://drive.google.com/file/d/14D6Tw94IaPOyTlztWh6_DXGbEDeXSAYo/preview')">Pasoori</button></div>
+                <div><button onclick="change_song('https://drive.google.com/file/d/1jyaMbUv_V2kmUb1S7pz6XBz66Awz5NfL/preview')">Vikram - Title Track</button></div>
+                <div><button onclick="change_song('https://drive.google.com/file/d/12bvoz3ozRXOwhLSYiKtW77ZrwvkmV2wR/preview' )">Zara Thehro</button></div>
                 
             </div>
             
         </div>
-        <div class ="bottom_list">
-            <div>Bottom_1</div>
-            <div>Bottom_2</div>
-            <div>Bottom_3</div>
+        <div>
+            <iframe src="https://drive.google.com/file/d/1Vsd-gmHiTs_t4rGjrJ0LEvNvU_AqXUlJ/preview" 
+            width="100%" height="100px" id="music_player"></iframe>
             
         </div>
         
