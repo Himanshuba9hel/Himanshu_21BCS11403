@@ -33,7 +33,7 @@ div {
     height: auto;
 }
 .top-top > img {
-    width: 100px;
+    width: 150px;
 }
 input {
     width: 300px;
@@ -152,7 +152,7 @@ input {
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
 }
 .card {
-    padding: 30px;
+    padding: 15px;
     border-radius: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
