@@ -47,13 +47,17 @@
                 <div><button onclick="change_song('https://drive.google.com/file/d/14D6Tw94IaPOyTlztWh6_DXGbEDeXSAYo/preview','img_list/Pasoori.png')">Pasoori</button></div>
                 <div><button onclick="change_song('https://drive.google.com/file/d/1jyaMbUv_V2kmUb1S7pz6XBz66Awz5NfL/preview','img_list/Vikram.jpg')">Vikram - Title Track</button></div>
                 <div><button onclick="change_song('https://drive.google.com/file/d/12bvoz3ozRXOwhLSYiKtW77ZrwvkmV2wR/preview','img_list/Zara Thehro.jpg')">Zara Thehro</button></div>
-                
+                <div><button onclick="change_song('https://cumailin-my.sharepoint.com/personal/21bcs11403_cuchd_in/_layouts/15/embed.aspx?UniqueId=135ff2b0-3f53-4c9a-ba0e-6dffeb14f7f7&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create','img_list/Zara Thehro.jpg')">This Game</button></div>
             </div>
             
         </div>
         <div>
             <iframe src="https://drive.google.com/file/d/1Vsd-gmHiTs_t4rGjrJ0LEvNvU_AqXUlJ/preview" 
-            id="music_player"></iframe>
+            id="music_player" controls autoplay></iframe>
+            <div>
+                <button onclick="stop_audio()">Stop</button>
+                <button onchange="start_audio()">Strat</button>
+            </div>
             
         </div>
         
