@@ -13,20 +13,43 @@ body {
     flex-direction: column;
 }
 div {
-    border: 3px solid white;
+    
     padding: 4px;
     margin: 4px;
 }
 .top {
+    background-color: black;
+    font-size: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 150px;
+    height: auto;
+    
 }
 .top-top {
     margin-top: 0px;
     margin-bottom: 0px;
-    heigth
+    height: auto;
+}
+.top-top > img {
+    width: 100px;
+}
+input {
+    width: 300px;
+    height: 40px;
+    border-color: aliceblue;
+    background-color: transparent;
+    border-radius: 20px;
+}
+#search {
+    background-color: transparent;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    border-color: white;
+    color: aliceblue;
+    border-radius: 15px;
 }
 .top-base {
     
@@ -50,15 +73,17 @@ div {
     background-color: transparent;
 }
 .top-base > div:hover {
-    background-color: beige;
+    background-color: rgb(120, 120, 120);
 }
 .top-a {
    grid-area: top-a;
 }
 .top-b {
+    padding-top: 7px;
    grid-area: top-b; 
 }
 .top-c {
+    padding-top: 7px;
     grid-area: top-c;
 }
 .top-d {
@@ -67,12 +92,33 @@ div {
     justify-items: center;
     grid-area: top-d;
     
+    
 }
+.top-d > button {
+    background-color: transparent;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    border-color: white;
+    color: aliceblue;
+    border-radius: 15px;
+} 
 .top-e {
     display: flex;
     align-items: center;
     justify-items: center;
     grid-area: top-e;
+}
+.top-e > button {
+    background-color: transparent;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    border-color: white;
+    color: aliceblue;
+    border-radius: 15px;
 }
 
 
@@ -105,14 +151,20 @@ div {
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
 }
 .card {
+    padding: 30px;
     border-radius: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 0px;
     margin-right: 0px;
     grid-column-gap: 0px;
-    height: 200px;
-    width: 150px;
+    height: auto;
+    width: auto;
+}
+.card:hover {
+    background-color: #777;
+    opacity: 30%;
+    box-shadow: 3px 3px gray;
 }
 .base {
     display: grid;
