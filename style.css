@@ -1,14 +1,19 @@
-body {
-    background-color: aqua;
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
     padding:  0px;
     margin: 0px;
 }
-.all {
+#all {
+    background-image: url("img/wall.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
     display: flex;
     flex-direction: column;
 }
 div {
-    border: 3px solid black;
+    border: 3px solid white;
     padding: 4px;
     margin: 4px;
 }
@@ -24,6 +29,7 @@ div {
     heigth
 }
 .top-base {
+    
     width: 50%;
     min-width: 300px;
     display: grid;
@@ -37,6 +43,15 @@ div {
         "top-a top-a top-a top-a top-a"
         "top-b top-c top-d top-e top-e";
 }
+
+.top-base > div {
+    border-radius: 10px;
+    
+    background-color: transparent;
+}
+.top-base > div:hover {
+    background-color: beige;
+}
 .top-a {
    grid-area: top-a;
 }
@@ -47,10 +62,16 @@ div {
     grid-area: top-c;
 }
 .top-d {
+    display: flex;
+    align-items: center;
+    justify-items: center;
     grid-area: top-d;
     
 }
 .top-e {
+    display: flex;
+    align-items: center;
+    justify-items: center;
     grid-area: top-e;
 }
 
@@ -84,15 +105,24 @@ div {
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
 }
 .card {
+    border-radius: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 0px;
     margin-right: 0px;
+    grid-column-gap: 0px;
     height: 200px;
     width: 150px;
 }
 .base {
     display: grid;
+    border-radius: 15px;
     grid-template-columns: 1fr 1fr 1fr;
+    
     height: 200px;
+}
+.base > div {
+    margin: 15px;
+    padding: 0px;
+    border-radius: 15px;
 }
